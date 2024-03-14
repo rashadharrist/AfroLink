@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AfroLink - Login</title>
+	<link rel="stylesheet" type="text/css" href="styles.css"> <!-- Link to CSS file for styling -->
+</head>
+<body>
+	<header>
+		<nav>
+			<!-- Navigation links can be added/modified here -->
+			<a href="homepage.html">Home</a>
+			<a href="register.html">Register</a>
+		</nav>
+		<!-- Search bar for businesses -->
+		<input type="text" placeholder="Search for black owned businesses..." id="search-input">
+	</header>
+	<main>
+		<!-- Container for login form -->
+		<div class="login-container">
+			<h1>Login</h1>
+			<!-- Login form -->
+			<form id="login-form">
+				<label for="email">Email:</label><br>
+				<input type="email" id="email" name="email" required><br>
+				<label for="password">Password:</label><br>
+				<input type="password" id="password" name="password" required><br>
+				<button type="submit">Login</button>
+			</form>
+			<!-- Error message for invalid login -->
+			<p id="error-message" style="display:none; color:red;"></p>
+		</div>
+	</main>
+	<script>
+		// Handle form submission
+		document.getElementById('login-form').addEventListener('submit', function(event) {
+			// Prevent default form submission
+			event.preventDefault();
+			// Get form values
+			const email = document.getElementById('email').value;
+			const password = document.getElementById('password').value;
+			// Validate form submission
+			if (email === '' || password === '') {
+				// Show error message for empty fields
+				document.getElementById('error-message').textContent = 'Email and password are required.';
+				document.getElementById('error-message').style.display = 'block';
+			} else {
+				// Submit form data to server for authentication

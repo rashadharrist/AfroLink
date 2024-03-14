@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Directory</title>
+    <style>
+        /* Set background color to red, black, and green (afro American flag colors) */
+        body {
+            background-color: #cf142b;
+            background-image: linear-gradient(45deg, #cf142b 0%, #002b36 100%);
+        }
+        /* Style header */
+        header {
+            background-color: #002b36;
+            color: #ffffff;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin-right: 1rem;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        #search-form {
+            display: flex;
+            align-items: center;
+            margin-right: 1rem;
+        }
+        #search-input {
+            border: none;
+            background-color: #ffffff;
+            padding: 0.5rem;
+            margin-right: 0.5rem;
+        }
+        /* Style main section */
+        main {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 4px;
+        }
+        .business-container {
+            display: flex;
+            flex-wrap: wrap;
+            margin: -0.5rem;
+        }
+        .business-card {
+            flex: 1 0 300px;
+            margin: 0.5rem;
+            background-color: #f9f9f9;
+            padding: 1rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 4px;
+        }
+        .business-icon {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+            margin-bottom: 0.5rem;
+        }
+        h2 {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <!-- Navigation links can be added/modified here -->
+            <a href="index.html">Home</a>
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+        </nav>
+        <!-- Search bar for businesses -->
+        <form id="search-form">
+            <input type="text" placeholder="Search for black owned businesses..." id="search-input">
+            <button type="submit">Search</button>
+        </form>
+    </header>
+    <main>
+        <!-- Container for search results -->
+        <div class="business-container">
+            <!-- Businesses will be dynamically loaded here -->
+            <a href="barbers.html">
+                <div class="business-card">
+                    <img src="barber.jpeg" alt="Barbers" class="business-icon">
+                    <h2>Barbers</h2>
+                    <!-- Optional description <p>Location: 123 Main St., Anytown, USA</p> -->
+                </div>
+            </a>
+            <a href="locicians.html">
+                <div class="business-card">
+                    <img src="locs.jpeg" alt="Locicians" class="business-icon">
+                    <h2>Locicians</h2>
+                    <!-- optional description <p>Location: 456 Main St., Anytown, USA</p> -->
+                </div>
+            </a>
+            <a href="braids.html">
+                <div class="business-card">
+                    <img src="braids.jpeg" alt="Braids" class="business-icon">
+                    <h2>Braids</h2>
+                    <!-- Optional description <p>Location: 789 Main St., Anytown, USA</p> -->
+                </div>
+            </a>
+            <a href="lash-nail-techs.html">
+                <div class="business-card">
+                    <img src="lashes.jpeg" alt="Lash & Nail Techs" class="business-icon">
+                    <h2>Lash & Nail Techs</h2>
+                    <!-- Optional description <p>Location: 101 Main St., Anytown, USA</p> -->
+                </div>
+            </a>
+            <a href="ride-share.html">
+                <div class="business-card">
+                    <img src="rideshare.jpeg" alt="Ride Share" class="business-icon">
+                    <h2>Ride Share</h2>
+                    <!-- Optional description <p>Location: 202 Main St., Anytown, USA</p> -->
+                </div>
+            </a>
+        </div>
+    </main>
+</body>
+</html>
