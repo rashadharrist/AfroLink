@@ -1,0 +1,32 @@
+.service-slider {
+  background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTANTNFg-08Gup98SIzShUqdRMGO7ftnyMPsw&s') no-repeat center center fixed;
+  background-size: cover;
+  text-align: center;
+  color: white;
+  padding: 50px 0;
+}
+
+.bold-header {
+  font-size: 48px; /* Adjust size as needed */
+  margin-bottom: 20px;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.search-bar input {
+  padding: 10px;
+  width: 50%; /* Adjust width as needed */
+  margin-right: -5px;
+}
+
+.search-bar button {
+  padding: 10px;
+  background: blue; /* Adjust color to match design */
+  color: white;
+  border: none;
+  cursor: pointer;
+}

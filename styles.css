@@ -1,0 +1,15 @@
+/* Primary Color Palette based on the image */
+:root {
+    --primary-red: #8C1D40; /* The red hue from the image */
+    --primary-black: #000000; /* The black hue from the image */
+    --primary-green: #006B3C; /* The green hue from the image */
+}
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: var(--primary-black);
+    color: white;
+}
+
+/* Add additional styling as needed */

@@ -1,0 +1,103 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Use the colors as variables to maintain consistency and for ease of changes */
+:root {
+  --afrolink-red: #e30613;
+  --afrolink-black: #000000;
+  --afrolink-green: #009639;
+}
+
+/* Navbar styling */
+nav {
+  background: var(--afrolink-black);
+  color: var(--afrolink-black);
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav .right {
+  margin-left: auto;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+nav a:hover {
+  color: var(--afrolink-red);
+}
+
+/* Home Page */
+.homepage {
+  background-color: var(--afrolink-red);
+  color:  (179, 39, 39);
+  padding: 2rem;
+  text-align: center;
+}
+
+/* About Page */
+.about {
+  background-color: var(--afrolink-green);
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* General Button Styling */
+button {
+  background-color: var(--afrolink-red);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--afrolink-green);
+}
+
+/* Example styles in App.css or create a separate CSS module */
+.auth-form {
+  background-color: white;
+  color: var(--afrolink-black);
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.auth-form input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.auth-form button {
+  background-color: var(--afrolink-red);
+  color: rgb(89, 18, 18);
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.auth-form button:hover {
+  background-color: var(--afrolink-green);
+}
+
+.auth-form p {
+  text-align: center;
+}
