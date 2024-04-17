@@ -1,6 +1,6 @@
 # AfroLink
 ## Team 6 Members
-- Rashad Harris, Tolulupe Oladipupo, Joshua Lee, Paris Johnson
+- Rashad Harris, Tolulupe Oladipopu, Joshua Lee, Paris Johnson
 
 ## Github Link
 - https://github.com/rashadharrist/afrolink
